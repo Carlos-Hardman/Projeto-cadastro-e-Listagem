@@ -1,5 +1,5 @@
 <?php
-$CaminhoBanco = "C:/xampp/htdocs/Projeto cadastro e Listagem/sql/banco.txt";
+$CaminhoBanco = "C:/xampp/htdocs/Projeto-cadastro-e-Listagem/sql/banco.txt";
 $conexao = new PDO("sqlite:$CaminhoBanco");
 
 // Configurar o PDO para gerar erros
