@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Operamax</title>
+</head>
+
+<body>
+    <main>
+        <div class="conteinerOperacao">
+            <h1 id="Logo">Operamax</h1>
+
+            <div class="DivListagem">
+                <a href="../php/ListagemFuncionarios.php" class="ListagemFuncionarios">Listagem de Funcionarios</a>
+                <a href="../php/ListagemAlunos.php" class="ListagemAlunos">Listagem de Alunos</a>
+            </div>
+            <div class="DivCadastro">
+                <a href="../html/CadastroFuncionario.html" class="CadastroFuncionarios">Cadastrar Funcionarios</a>
+                <a href="../html/CadastroAlunos.html" class="CadastroAlunos">Cadastrar Alunos</a>
+            </div>
+        </div>
+        <div class="infoPadrao">
+            <h2 id="subtitulo">Cadastro de Alunos:</h2>
+           <form action="../php/CadastroAlunos.php" method="post">
+    <div class="PrimeiroCampos">    
+        <div class="campo">
+            <label for="LabelNomeAluno">Nome Aluno:</label>
+            <input type="text" name="NomeAluno" id="NomeAluno"/>
+        </div>
+
+        <div class="campo">
+            <label for="LabelTelefone">Telefone:</label>
+            <input type="text" name="TelefoneAluno" id="TelefoneAluno"/>
+        </div>
+    </div>
+
+    <div class="Segundocampo">
+        <div class="campo">
+            <label for="LabelIdadeAluno">Idade:</label>
+            <input type="number" name="IdadeAluno" id="IdadeAluno"/>
+        </div>
+
+        <div class="campo">
+            <label for="LabelHora">Hora:</label>
+            <input type="time" name="Hora" id="HoraAulaAluno"/>
+        </div>
+    </div>
+    <div class="Terceirocampo">
+        <div class="campo">
+            <label for="LabelProfessorAula">Professor:</label>
+            <input type="text" name="ProfessorAula" id="ProfessorAula"/>
+        </div>
+
+        <div class="campo">
+            <label for="LabelModalidadeAula">Modalidade:</label>
+            <input type="text" name="ModalidadeAula" id="ModalidadeAula"/>
+        </div>
+    </div>
+
+    <div class="DivBnt">
+        <input id="BNTCadastrarFuncionario" type="submit" value="Cadastrar"/>
+    </div>
+</form>
+
+        </div>
+    </main>
+    
+    <div class="bordatop">
+
+    </div>
+    <div class="bordabottom">
+
+    </div>
+    
+</body>
+
+</html>

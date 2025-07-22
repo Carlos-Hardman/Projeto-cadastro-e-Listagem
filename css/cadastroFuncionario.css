@@ -1,0 +1,44 @@
+ form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .PrimeiroCampos,
+    .Segundocampo, .Terceirocampo {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    .campo {
+        display: flex;
+        flex-direction: column;
+        width: 220px;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 6px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .DivBnt {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #BNTCadastrarFuncionario {
+        padding: 10px 30px;
+        font-size: 16px;
+        cursor: pointer;
+    }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Operamax</title>
+</head>
+
+<body>
+    <main>
+        <div class="conteinerOperacao">
+            <h1 id="Logo">Operamax</h1>
+
+            <div class="DivListagem">
+                <a href="../php/ListagemFuncionarios.php" class="ListagemFuncionarios">Listagem de Funcionarios</a>
+                <a href="../php/ListagemAlunos.php" class="ListagemAlunos">Listagem de Alunos</a>
+            </div>
+            <div class="DivCadastro">
+                <a href="../html/CadastroFuncionario.html" class="CadastroFuncionarios">Cadastrar Funcionarios</a>
+                <a href="../html/CadastroAlunos.html" class="CadastroAlunos">Cadastrar Alunos</a>
+            </div>
+        </div>
+        <div class="infoPadrao">
+            <h2 id="subtitulo">Cadastro de Funcionarios:</h2>
+           <form action="../php/CadastroFuncionarios.php" method="post">
+    <div class="PrimeiroCampos">    
+        <div class="campo">
+            <label for="LabelNomeFuncionario">Nome Funcionário:</label>
+            <input type="text" name="NomeFuncionario" id="NomeFuncionarios"/>
+        </div>
+
+        <div class="campo">
+            <label for="LabelTelefoneFuncionario">Telefone:</label>
+            <input type="text" name="TelefoneFuncionario" id="TelefoneProfessor"/>
+        </div>
+    </div>
+
+    <div class="Segundocampo">
+        <div class="campo">
+            <label for="LabelIdadeProfessor">Idade:</label>
+            <input type="number" name="IdadeFuncionario" id="Idade"/>
+        </div>
+
+        <div class="campo">
+            <label for="LabelModalidade">Modalidade:</label>
+            <input type="text" name="ModalidadeProfessor" id="ModalidadeProfessor"/>
+        </div>
+    </div>
+
+    <div class="DivBnt">
+        <input id="BNTCadastrarFuncionario" type="submit" value="Cadastrar"/>
+    </div>
+</form>
+
+        </div>
+    </main>
+    
+    <div class="bordatop">
+
+    </div>
+    <div class="bordabottom">
+
+    </div>
+    
+</body>
+
+</html>
