@@ -45,55 +45,7 @@ $conexao = null;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <title>Operamax</title>
-    <style>
-        table {
-            width: 80%; /* Ajusta a largura da tabela */
-            margin: 20px auto;
-            border-collapse: collapse;
-            max-width: 900px; /* Limita a largura máxima da tabela */
-        }
-        th, td {
-            padding: 8px 12px; /* Diminui o padding para tornar a tabela mais compacta */
-            text-align: left;
-            border: 1px solid #ddd;
-            font-size: 14px; /* Tamanho de fonte reduzido */
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        .paginacao {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .paginacao a,
-        .paginacao span {
-            margin: 0 5px;
-            padding: 8px 12px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .paginacao a:hover {
-            background-color: #0056b3;
-        }
-        .paginacao span {
-            background-color: #ccc;
-            color: #333;
-        }
 
-        /* Certifique-se de que a paginação aparece na horizontal */
-        .paginacao {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .paginacao a,
-        .paginacao span {
-            margin-right: 5px;
-        }
-    </style>
 </head>
 
 <body>
@@ -102,12 +54,12 @@ $conexao = null;
             <h1 id="Logo">Operamax</h1>
 
             <div class="DivListagem">
-                <a href="../php/ListagemFuncionarios.php" class="ListagemFuncionarios">Listagem de Funcionarios</a>
-                <a href="../php/ListagemAlunos.php" class="ListagemAlunos">Listagem de Alunos</a>
+                <a href="../php/ListagemFuncionarios.php" class="ListagemFuncionarios botaooperacao">Listagem de Funcionarios</a>
+                <a href="../php/ListagemAlunos.php" class="ListagemAlunos botaooperacao">Listagem de Alunos</a>
             </div>
             <div class="DivCadastro">
-                <a href="../html/CadastroFuncionario.html" class="CadastroFuncionarios">Cadastrar Funcionarios</a>
-                <a href="../html/CadastroAlunos.html" class="CadastroAlunos">Cadastrar Alunos</a>
+                <a href="../html/CadastroFuncionario.html" class="CadastroFuncionarios botaooperacao">Cadastrar Funcionarios</a>
+                <a href="../html/CadastroAlunos.html" class="CadastroAlunos botaooperacao">Cadastrar Alunos</a>
             </div>
         </div>
         
@@ -121,6 +73,8 @@ $conexao = null;
                         <th>Telefone</th>
                         <th>Idade</th>
                         <th>Modalidade</th>
+                        <th>Excluir</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -133,6 +87,11 @@ $conexao = null;
                             <td>{$aluno['TelefoneFunciionario']}</td>
                             <td>{$aluno['IdadeFuncionario']}</td>
                             <td>{$aluno['Modalidade']}</td>
+                            <td>
+                                <a  class='lixeira' href='#'>
+                                    <img alt='excluir' src='https://cdn-icons-png.flaticon.com/512/5510/5510213.png' width='20'/>
+                                </a>
+                            </td>
                         </tr>";
                     }
                     ?>

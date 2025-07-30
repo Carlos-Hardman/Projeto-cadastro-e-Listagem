@@ -1,0 +1,52 @@
+table {
+            width: 80%; /* Ajusta a largura da tabela */
+            margin: 20px auto;
+            border-collapse: collapse;
+            max-width: 900px; /* Limita a largura máxima da tabela */
+        }
+        th, td {
+            padding: 8px 12px; /* Diminui o padding para tornar a tabela mais compacta */
+            text-align: left;
+            border: 1px solid #ddd;
+            font-size: 14px; /* Tamanho de fonte reduzido */
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .paginacao {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .paginacao a,
+        .paginacao span {
+            margin: 0 5px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .paginacao a:hover {
+            background-color: #0056b3;
+        }
+        .paginacao span {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        /* Certifique-se de que a paginação aparece na horizontal */
+        .paginacao {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .paginacao a,
+        .paginacao span {
+            margin-right: 5px;
+        }
+        .lixeira{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
