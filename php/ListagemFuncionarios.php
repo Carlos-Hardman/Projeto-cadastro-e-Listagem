@@ -13,13 +13,13 @@ $paginaAtual = isset($_GET['pagina']) ? $_GET['pagina'] : 1;
 $inicio = ($paginaAtual - 1) * $porPagina;
 
 // Contar o número total de alunos
-$sqlTotal = "SELECT COUNT(*) as total FROM Alunos";
+$sqlTotal = "SELECT COUNT(*) as total FROM Funcionarios";
 $stmtTotal = $conexao->query($sqlTotal);
 $resultadoTotal = $stmtTotal->fetch(PDO::FETCH_ASSOC);
-$totalAlunos = $resultadoTotal['total'];
+$totalFuncionarios = $resultadoTotal['total'];
 
 // Calcular número total de páginas
-$totalPaginas = ceil($totalAlunos / $porPagina);
+$totalPaginas = ceil($totalFuncionarios / $porPagina);
 
 // Consulta para selecionar alunos com paginação
 $sql = "SELECT * FROM Funcionarios LIMIT :limite OFFSET :offset";
